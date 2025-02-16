@@ -1,0 +1,6 @@
+sarthak-rawat@sarthak-rawat-VMware-Virtual-Platform:~$ docker ps -a
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS                     PORTS     NAMES
+6c3476997cf1   httpd     "httpd-foreground"       33 seconds ago   Up 32 seconds              80/tcp    httpd
+452ff1e83303   nginx     "/docker-entrypoint.…"   42 seconds ago   Exited (0) 4 seconds ago             nginx2
+bccb312f3e63   nginx     "/docker-entrypoint.…"   53 seconds ago   Exited (0) 8 seconds ago             nginx1
