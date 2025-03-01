@@ -1,0 +1,15 @@
+sarthak-rawat@sarthak-rawat-VMware-Virtual-Platform:~$ docker run -d -it --name testubuntu devopsdockeruh/simple-web-service:ubuntu 
+7c45534b272c450a64efad9f76152fbdd440a27f35243444db1ff456f6635e58
+
+sarthak-rawat@sarthak-rawat-VMware-Virtual-Platform:~$ docker container ls
+CONTAINER ID   IMAGE                                      COMMAND                 CREATED         STATUS         PORTS     NAMES
+7c45534b272c   devopsdockeruh/simple-web-service:ubuntu   "/usr/src/app/server"   6 seconds ago   Up 6 seconds             testubuntu
+
+sarthak-rawat@sarthak-rawat-VMware-Virtual-Platform:~$ docker exec testubuntu tail -f ./text.log
+2025-03-01 07:35:51 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2025-03-01 07:35:53 +0000 UTC
+2025-03-01 07:35:55 +0000 UTC
+2025-03-01 07:35:57 +0000 UTC
+2025-03-01 07:35:59 +0000 UTC
+2025-03-01 07:36:01 +0000 UTC
